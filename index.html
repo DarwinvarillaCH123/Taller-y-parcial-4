@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista de Tareas para el taller y el quizz #4</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <h1>Lista de Tareas</h1>
     <input type="text" id="task-input" placeholder="Escribe una nueva tarea">
-    <button onclick="agregarTarea()">Agregar tarea a la lista</button>
-
+    <button onclick="agregarTarea()" class="shadow__btn">
+        Agregar tarea a la lista
+    </button>
     <table id="task-table">
         <thead>
             <tr>
@@ -19,10 +20,9 @@
             </tr>
         </thead>
         <tbody id="task-list">
-            <!-- Aquí se agregarán las tareas -->
+            <!-- Agregar tareas -->
         </tbody>
     </table>
-
     <script src="index.js"></script>
 </body>
 </html>
