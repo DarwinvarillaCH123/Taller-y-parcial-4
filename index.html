@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Tareas para el taller y el quizz #4</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <h1>Lista de Tareas</h1>
+    <input type="text" id="task-input" placeholder="Escribe una nueva tarea">
+    <button onclick="agregarTarea()">Agregar tarea a la lista</button>
+
+    <table id="task-table">
+        <thead>
+            <tr>
+                <th>N°</th>
+                <th>Tarea</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="task-list">
+            <!-- Aquí se agregarán las tareas -->
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
 </body>
 </html>
